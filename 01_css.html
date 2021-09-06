@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html form</title>
+	<style>
+		table{
+			width: 100%;
+	}
+		body{
+			background-image:url("test/beach.jpeg");
+			text-decoration: capitalize;
+		}
+		div
+		{
+			padding: 20px;
+			margin: auto;
+			border-radius: 10px;
+			color:blue;
+			text-decoration: capitalize;
+		}
+		fieldset{
+			border: 2px solid red;
+			box-shadow: 0 0 10px black;
+			background-color: rgba(0, 0, 0, 0.5);
+			text-decoration: capitalize;
+		}
+		fieldset legend{
+			border: inherit;
+			padding: 10px;
+			border-radius: 20px 0px 20px 0px;
+			background:linear-gradient(45deg,blue,orange,green);
+			color: blue;
+		}
+		input[type='submit']
+		{
+		padding: 10px;
+			border-radius: 20px 0px;
+			background:linear-gradient(45deg,blue,orange,green);
+			color: white;
+			border: 20px;	
+		}
+		input[type='reset']
+		{
+		padding: 10px;
+			border-radius: 20px 0px;
+			background:linear-gradient(45deg,blue,orange,green);
+			color: white;
+			border: 20px;	
+		}
+		input[type='text'],
+		input[type='number'],
+		input[type='date'],
+		input[type='week'],
+		input[type='dateandtime']
+		{
+			border-radius:10px;
+			border: 2px solid blue;
+		}
+		input[type='text']:focus,
+		input[type='number']:focus,
+		input[type='date']:focus,
+		input[type='week']:focus,
+		input[type='dateandtime']:focus
+		{
+			border: none;
+			outline: none;
+			border-radius:10px;
+			border: 2px solid blue;	
+		}
+		#c{
+			border: none;
+			outline: none;
+			border-radius:10px;
+			border: 2px solid blue;	
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1 align="center" color="red"> Tech Mahindra online job</h1>
+		<form>
+			<fieldset>
+				<legend>personal education</legend>
+				<table>
+					<tr>
+						<td><label>first name</label></td>
+						<td><input type="text" name=""></td>
+						<td><label>middle name</label></td>
+						<td><input type="text" name=""></td>
+						<td><label>last name</label></td>
+						<td><input type="text" name=""></td>
+					</tr>
+					<tr>
+						<td><label>father' name</label></td>
+						<td><input type="text" name=""></td>
+						<td><label>mother'sname</label></td>
+						<td><input type="text" name=""></td>
+					</tr>
+					<tr>
+						<td><label>current address</label></td>
+						<td><input type="text" name=""></td>
+						<td><label>permanent address</label></td>
+						<td><input type="text" name=""></td>
+					</tr>
+					<h2>phone numbers</h2>
+					<tr>
+						<td><label>landline number</label></td>
+						<td><input type="number" name=""></td>
+						<td><label>mobile number</label></td>
+						<td><input type="number" name=""></td>
+						
+					</tr>
+					<tr>
+						<td><label>date of birth</label></td>
+						<td><input type="date" name=""></td>
+						<td><label>place of birth</label></td>
+						<td><input type="text" name=""></td>
+					</tr>
+					<tr>
+						<td><label>slect gender</label></td>
+						<td><input type="radio" name="r1"> male</td>
+						<td><input type="radio" name="r1"> female</td>
+					</tr>
+					<tr>
+						<td><label>highest qualification</label></td>
+						<td><input type="text" name=""></td>
+						<td><label>year of passing</label></td>
+						<td><input type="number" name=""></td>
+					</tr>
+					<tr>
+						<td><label>languages known</label></td>
+						<td><input type="checkbox" name="c1"> telugu</td>
+						<td><input type="checkbox" name="c2">english</td>
+						<td><input type="checkbox" name="c3">hindi</td>
+						
+					</tr>
+					<tr>
+						<td><label>select your hobbies</label></td>
+						<td><input type="checkbox" name="c1">eatting</td>
+						<td><input type="checkbox" name="c2">codding</td>
+						<td><input type="checkbox" name="c3">sleeping</td>
+						</tr>
+						<tr>
+						<td><label>about yourself</label></td>
+						<td><textarea id="c"></textarea></td>
+					</tr>
+					<tr>
+						<td><label>nationality</label></td>
+						<td><select id="c">
+							<option>...select...</option>
+							<option>hindu</option>
+						    <option>muslim</option>
+						    <option>cristian</option>
+						</select>
+					</td>
+					</tr>
+					<tr>
+						<td><label>adharcard number</label></td>
+						<td><input type="number" name=""></td>
+						<td><label>pancard number</label></td>
+						<td><input type="number" name=""></td>
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>educational details</legend>
+				<table>
+					<tr>
+						<th>S.NO</th>
+						<th>qualification</th>
+						<th>univesity/institute</th>
+						<th>year of passing</th>
+						<th>marks(%)</th>
+					</tr>
+					<tr>
+						<td>1.</td>
+						<td><input type="text" name=""></td>
+						<td><input type="text" name=""></td>
+						<td><input type="number" name=""></td>
+						<td><input type="number" name=""></td>
+                  </tr>
+                  <tr>
+						<td>2.</td>
+						<td><input type="text" name=""></td>
+						<td><input type="text" name=""></td>
+						<td><input type="number" name=""></td>
+						<td><input type="number" name=""></td>
+                  </tr>
+                  <tr>
+						<td>3.</td>
+						<td><input type="text" name=""></td>
+						<td><input type="text" name=""></td>
+						<td><input type="number" name=""></td>
+						<td><input type="number" name=""></td>
+                  </tr>
+				</table>
+			</fieldset>
+						<fieldset>
+				<legend>work experience</legend>
+				<table>
+					<tr>
+						<th>S.NO</th>
+						<th>company</th>
+						<th>work/role</th>
+						<th>from dates</th>
+						<th>to date</th>
+					</tr>
+					<tr>
+						<td>1.</td>
+						<td><textarea id="c"></textarea></td>
+						<td><textarea id="c"></textarea></td>
+						<td><input type="week" name=""></td>
+			            <td><input type="week" name=""></td>
+                  </tr>
+                  <tr>
+						<td>2.</td>
+						<td><textarea id="c"></textarea></td>
+						<td><textarea id="c"></textarea></td>
+						<td><input type="week" name=""></td>
+			            <td><input type="week" name=""></td>
+                  </tr>
+                  <tr>
+						<td>3.</td>
+						<td><textarea id="c"></textarea></td>
+						<td><textarea id="c"></textarea></td>
+						<td><input type="week" name=""></td>
+			            <td><input type="week" name=""></td>
+                  </tr>
+                 
+				</table>
+			</fieldset>
+				<fieldset>
+					<legend>other details</legend>
+					<table>
+						<tr>
+							<td><label>job type</label></td>
+							<td><input type="radio" name="r1">permanent</td>
+							<td><input type="radio" name="r2">contract</td>
+							<td><input type="radio" name="r3">others</td>
+						</tr>
+						<tr>
+							<td><label>date of joining</label></td>
+							<td><input type="date" name=""></td>
+							<td><label>time of joining</label></td>
+							<td><input type="dateandtime" name=""></td>
+						</tr>
+						<tr>
+							<td><label>job type</label></td>
+							<td><input type="radio" name="r1">bangolore</td>
+							<td><input type="radio" name="r2">hyderabad</td>
+							<td><input type="radio" name="r3">no</td>
+						</tr>
+						<tr>
+							<td colspan="2"><label>willing to relocate hyderabad?</label></td>
+							<td><input type="radio" name="r1">yes</td>
+							<td><input type="radio" name="r1">no</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="c1">i am here by declaring that all above information is true as per my knowledge</td></tr>
+							<tr>
+								<td colspan="2" align="center"><input type="submit" name="sub"></td>
+								<td colspan="2" align="left"><input type="reset" name="res"></td>
+							</tr>
+					</table>
+				</fieldset>
+		</form>
+	</div>
+</body>
+</html>
